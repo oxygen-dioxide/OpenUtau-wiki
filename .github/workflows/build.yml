@@ -31,7 +31,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Sync from OpenUtau wiki
-        run: mkdir ./wiki; git -C ./wiki clone https://github.com/stakira/OpenUtau.wiki
+        run: git clone https://github.com/stakira/OpenUtau.wiki
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
